@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon masterServer.js"
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "nodemon": "^2.0.21"
