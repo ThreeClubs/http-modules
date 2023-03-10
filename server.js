@@ -9,7 +9,7 @@
 // and if we are NOT there() ie we write something like "/blah" )then we get a 404 error
 
 // 5) add an additional condition which checks for an another endpoint of your own creation such as "/stuff" or "/message"
-// you can make your own api and populate it with that, or you can just put in whatever you like!
+// you can make your own api and populate it with that, or you can just put in whatever content you like!
 // share your unique content with the class!
 
 // 6) BONUS rewrite the code using writeHead and defind content type, then put html elements directly in the end statement to give your content
