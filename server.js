@@ -1,16 +1,23 @@
-// 1) declare a variable called http and import "http" inside require
+const http = require("http");
 
-// 2)create a variable called "server" and use http and createServer method then pass in "req" and "res" as params
-//using res.write and res.end, write some code that displays "Hello" when we visit our server on the browser
+const server = http.createServer((req, res) => {
+  if (req.url === "/") {
+    res.write("<html><body><h1>This is a home page</h1></body></html>");
+    res.end();
+  } else if (req.url === "/name") {
+    res.write(
+      "<html><body><h1>My name is Andrew</h1><p>I like pies!</p></body></html>"
+    );
+    res.end();
+  } else {
+    res.write("404 Not Found");
+    res.end();
+  }
+});
 
-// 3) use our server with .listen to check that we're running and console log a server listen message such as "Server has started on 4000" etc
-
-// 4) Write a conditional statement inside our server that checks if we are at "/" (localhost:4000/ etc..)
-// and if we are NOT there() ie we write something like "/blah" )then we get a 404 error
-
-// 5) add an additional condition which checks for an another endpoint of your own creation such as "/stuff" or "/message"
-// you can make your own api and populate it with that, or you can just put in whatever content you like!
-// share your unique content with the class!
+server.listen(4000, "localhost", () => {
+  console.log("listening for requests on port 4000");
+});
 
 // 6) BONUS rewrite the code using writeHead and define content type, then put html elements directly in the end statement to give your content
 // some style and structure
