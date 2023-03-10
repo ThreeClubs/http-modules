@@ -12,5 +12,5 @@
 // you can make your own api and populate it with that, or you can just put in whatever content you like!
 // share your unique content with the class!
 
-// 6) BONUS rewrite the code using writeHead and defind content type, then put html elements directly in the end statement to give your content
+// 6) BONUS rewrite the code using writeHead and define content type, then put html elements directly in the end statement to give your content
 // some style and structure
